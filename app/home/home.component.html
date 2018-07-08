@@ -1,0 +1,12 @@
+ <form #sch="ngForm" (ngSubmit)="bike(sch.value)">
+ <mwl-text-input-autocomplete-container>
+      <textarea
+        placeholder="Type @ to search..." class="form-control" rows="1"  [(ngModel)]="formControlValue"
+        name="search"
+        mwlTextInputAutocomplete
+        [findChoices]="findChoices"
+        [getChoiceLabel]="getChoiceLabel">
+      </textarea>
+    </mwl-text-input-autocomplete-container>
+    <button type="submit">search</button>
+  </form>

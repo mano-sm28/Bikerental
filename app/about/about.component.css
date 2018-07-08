@@ -1,0 +1,35 @@
+row{
+    height:50%;
+}
+.modal {
+  
+    bottom: 46px !important;
+}  
+.btn-lg {
+    padding: 5px 7px ; 
+    font-size: 15px !important;
+    line-height: 1.3333333;
+  
+}
+.btn-lg[_ngcontent-c1]{
+    margin-bottom: 20px !important ;
+}
+
+#image {
+   
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #imagebg {
+    background: rgba(2, 2, 2, 0.508);
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    position: absolute;
+  }

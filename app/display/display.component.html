@@ -1,0 +1,15 @@
+ 
+ <div id="bg">
+  <div id="bbg">
+    <div  id= "dis" *ngFor="let bike of b">
+<mat-card>
+    <form #bks="ngForm" (ngSubmit)=pop(bks.value)>
+<input type="button" id="bname" ngModel={{bike.Modelname}} name="bname"><br>
+<img mat-card-image src="http://localhost:4000/images/{{bike.image}}"><br>
+price<input type="button" ngModel={{bike.Price}} name="price">/day<br>
+bikeid<input type="button" ngModel={{bike._id}} name="bid"><br>
+<button type="submit">Book Now</button>    
+</form>
+  
+</mat-card>
+</div></div></div> 

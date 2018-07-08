@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-offset-5 col-md-5">
+
+        <div class="form-login">
+          <form #data="ngForm" (ngSubmit)="click(data.value)">
+          <h4>LOGIN HERE</h4>
+          <input type="text" id="userName" name="user" #user="ngModel" ngModel class="form-control input-sm chat-input" placeholder="username">
+    
+          <br>
+          <input type="text" id="userPassword" #pass="ngModel" name="pass" ngModel class="form-control input-sm chat-input" placeholder="password">
+          <br>
+          <div class="wrapper">
+          <span class="group-btn">     
+          <button [disabled]="!user.value||!pass.value" type="submit" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></button>
+          </span>
+          </div>
+          <a routerLink="/forgot">forget password?</a>
+          <a routerLink="/usersignup">Create Account</a> 
+         </form>
+        </div>
+      </div>
+  </div>
+</div>

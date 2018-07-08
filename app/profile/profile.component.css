@@ -1,0 +1,28 @@
+p {
+    margin: -11px 0 13px !important;
+}
+.modal-dialog {
+    width: 228px !important;
+    margin: 30px auto;
+}
+.container{
+    margin-left:85%;
+}
+#image {
+   
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #imagebg {
+    background: rgba(2, 2, 2, 0);
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    position: absolute;
+  }

@@ -1,0 +1,26 @@
+<div id="image">
+<div id="imagebg">
+<div class="containter">
+    <div class="signup col-lg-25 col-xs-12 text-center" >
+	<form #admreg="ngForm" id="signfrm" (ngSubmit)="adminreg(admreg.value)">
+		<h3 class="sign-h">Sign Up!</h3>
+			<input type="text" class="form-control" id="sign-frm-input" #name="ngModel" name="fname" [(ngModel)]="fname" placeholder="enter Your Name" required autofocus>
+			
+			<input type="text" class="form-control" id="sign-frm-input" #id="ngModel" name="_id" [(ngModel)]="_id" placeholder="enter Your Email ID" required autofocus>
+			
+			<input type="text" class="form-control" id="sign-frm-input" maxlength="10" minlength="10" #pno="ngModel" name="mob" [(ngModel)]="mob" placeholder="enter Your Mobile Number" required autofocus>	
+		    
+			<input type="password" class="form-control" id="sign-frm-input" #passw="ngModel" name="pass" [(ngModel)]="pass" placeholder="Create Your Password" required autofocus>
+			
+			<input type="password" class="form-control" #pass1="ngModel" id="sign-frm-input" name="conpass" [(ngModel)]="conpass" placeholder="Confirm Your password" required autofocus>
+			
+			<textarea cols="18" rows="4" type="text" class="form-control" id="address" autofocus #add="ngModel" placeholder="Address" [(ngModel)]="address" name="address" required></textarea><br>
+			<input type="file" (change)="onFileSelected($event)" [(ngModel)]="photo" name="photo" id="photo" class="form-control">
+			<br>
+			<button type="submit" class="btn btn-primary" [disabled]="!name.value||!id.value||!pno.value||!add.value||!passw.value||!pass1.value" id="sign-frm-input-btn">Submit</button>
+		
+		</form> 
+	</div>
+</div>
+</div>
+</div>

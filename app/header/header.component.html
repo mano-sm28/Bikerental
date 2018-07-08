@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <img id="logo" src="https://lh3.googleusercontent.com/Cik0WjnlBR-NY1oDcjXGVd1IYn975xsW6zQqDUurp5MbIl5mbU5g6ctCcH7VSctv2g8MZndyWoZSRZlQ1gIMxNEd3Y1wvBFQ26fd4C8eUDkrbRvQvqFClGG6UYOCFSuJa7YbAUtNWyyulbPBy1T1YRcjdg2tr_sCw9QNkfZYoeIf8SYlHTpPXog5soh8sdb6IC_cy94EFXR1EVpHChQo9tmvbyq5gBuUAiXvFWPp2SHzrUPoEKgMbETsnicLN-KpN0jfp5hTA8xl7SpzpqAgNkGTVL_KZ06TIVMC_Iva6H1dW8Gt0D-TQ_aqMkNoxZuuJ1QRQ28-uc_s-XLOGmGJznM8FQVAfIyUFOtAfkTTJCkl17MAgu1Q3UjzSW8leFyYAIdZ2K73pLy2wNwXijVVBEPGDHnofJJ4k4jde2IPNWJq4zzYmLEblJUpFmKHnXq2QQaeC_5VCJZjpSMRdBcC5dIU-hVkove56XRuHWY4F1flSQIwLATjwOscjzJKk5kId18H62SAByWKbGqQ8kxrPbo7mNOrghAQtFDZ5GxiDl4Uyo38bwk-nvCSicsPtBYdC-EFxD0lhFpZeNwk6UprYsGHLRR-zfpYKvIe1w=s250-k-no" height="80">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="navbar-collapse collapse" id="navb" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Upload Bike</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/usersignup">user signup</a>
+          </li>
+      </ul>
+      <form #bike="ngForm" (ngSubmit)="bikes(bike.value)" class="form-inline my-2 my-lg-0">
+         <input class="form-control mr-sm-2" ngModel #name="ngModel" name="loc" type="text" placeholder="Enter your location">
+          <input class="form-control mr-sm-2" ngModel #loc="ngModel" name="bike" type="text" placeholder="Enter Bike name">
+          <button type="submit" [disabled]="!name.value||!loc.value" class="btn btn-dark my-2 my-sm-0" id="sign-frm-input-btn">Submit</button>
+          <!-- <button class="btn btn-dark my-2 my-sm-0"  type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>

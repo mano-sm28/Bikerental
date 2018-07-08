@@ -1,0 +1,53 @@
+<div id="bg">
+    <div id="bbg">
+        <div class="hello">
+            <div class="container">
+              <div class="row">
+                    <div class="col-md-6">
+                        <form #data="ngForm" (ngSubmit)="bikeupload(data.value)">
+                        <fieldset><div calss="br"><legend class="text-center">Bike Register Form</legend></div>
+                       <div class="form-group"> 	 
+                            <label for="bname"><span class="req">* </span> Bike name: </label>
+                                <input class="form-control" type="text" [(ngModel)]="bname" name="bname" id = "bname"  required /> 
+                                     
+                        </div>
+                        
+                        <div class="form-group"> 	 
+                            <label for="bno"><span class="req">* </span> Bike no: </label>
+                                <input class="form-control" type="text" [(ngModel)]="bno" name="bno" id = "bno"  required /> 
+                                       
+                        </div>
+                        <div class="form-group"> 	 
+                            <label for="bmodel"><span class="req">* </span> Bike Color: </label>
+                                <input class="form-control" type="text" [(ngModel)]="bmodel" name="bmodel" id = "bmodel"  required /> 
+                                       
+                        </div>
+                      <div class="form-group">
+                            <label for="bimage"><span class="req">* </span> Bike image: </label>
+                            <input type="file" (change)="onFileSelected($event)" [(ngModel)]="photo" name="photo" id="photo" class="form-control">
+                      </div>
+                        <div class="form-group">
+                            <label for="adress"><span class="req">* </span>  Location: </label> 
+                                <input class="form-control" required type="text" [(ngModel)]="address" name="address" id = "address" />   
+                                    <div class="status" id="status"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress"><span class="req">* </span>  Price: </label> 
+                                <input class="form-control" required type="text" [(ngModel)]="price" name="price"  id = "address" />   
+                                    <div class="status" id="status"></div>
+                        </div>
+            
+                        <div class="form-group">
+                                <label for="cbook"><span class="req">* </span> C Book: </label>
+                                <input type="text" class="form-control" [(ngModel)]="cbook" name="cbook" id="file">
+                              </div>
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit"  name="submit_reg" value="Register">
+                        </div>
+                        </fieldset>
+                        </form>
+                    </div>
+              </div>
+            </div>
+            </div>
+</div>

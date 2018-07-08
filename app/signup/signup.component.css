@@ -1,0 +1,47 @@
+#signfrm {
+    margin:5% auto;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    }
+    #sign-frm-input {
+    margin-bottom: 10px;
+  }
+  
+  .sign-h{
+  text-align:left;
+  color:#317EAC;
+  }
+  #sign-icon{
+  margin-right:5px;
+  color:#317EAC;
+  }
+  
+  #sign-frm-input-btn {
+    width: 50%;
+    margin: auto;
+    font-size: 20;
+    padding: 5px !important;
+  }
+  #image {
+  /* background-image: url("https://lh3.googleusercontent.com/4v1jqMWuvxnonsa2B02KM1pNKV2xOygAcujF2p23V3U6rU_5kzrOAgV-4BJLI_xf_aOP0_OLAfyUYKwQomoOyo6Euj1hVW1_4PaWC4eRR_MJZ2HUt99_g_HLcc4RAmR_1hjGtqk9ImfcThvxbOQvtIhEEYl-trGON-dfL1I2LkUEpFE2Ybi0opUgORm-KqnYc9L5EcyBlmNqasWM_u6vxZXGzyloUBJexfk4WWa6wJSVsOm3mMlygDHR0QS--4LnaVvENM7aHyb9HvNSwwcAG9o52fCkKtDEq3m0NCtU3HQGFINjPRLIdC1q0A1di_ttYcprVv2WcyH44iVnUg7KKGErow3USYr0J4NOzvk8BHMDY8El_9SQ_aOjeJRF8pL3bhx5A0nn92VH02GIo07h1s7L-Oz63ykxq52xojmTmc653PqhufafbRTULf8_InI8J98CrqQDG1rVIbBBbVw5a3_xLB6Grx1OvTMzcsUZqFiScZc2CrxHQM9HPMmrDXPmn-szJi1a7e3sm6wGNe4dQ748HQb56rI98tJTT9VKVmNCyqh-IPCSd-o6aAxdey0rEm3dnVFjxaYfq6iW1C174a--EtJsUbRui9YPFA=s250-k-no"); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+#imagebg {
+  background: rgba(2, 2, 2, 0.508);
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+  position: absolute;
+}
+form{
+  background-color:rgba(0,0,0,0.5) !important;
+}

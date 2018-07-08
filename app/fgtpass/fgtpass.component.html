@@ -1,0 +1,27 @@
+
+<div class="panel panel-default" style="width:30%;margin-left:35%;margin-right:25%;margin-top:10%;position:absolute;background-color:blue">
+
+<form #fgt="ngForm"   (ngSubmit)="forgot(fgt.value)">
+  <div style="align:center" class="input-group">
+    <span class="input-group-addon">
+        <i class="glyphicon glyphicon-user"></i>
+    </span>
+    <input autofocus type="text" style="width: 80%" class="form-control" ngModel name="_id" title="UserName" placeholder="Enter your email"
+        required>
+
+  <button type="submit" id="log" class="login">Get Otp</button>    
+</div>      
+</form>
+<br>
+  <form #otp="ngForm"   (ngSubmit)="otpchk(otp.value)">
+    <div style="align:center" class="input-group">
+      <span class="input-group-addon">
+          <i class="glyphicon glyphicon-pencil"></i>
+      </span>
+      <input autofocus type="text" style="width:78%" class="form-control" ngModel name="otp" title="otp" placeholder="Enter yoiur otp"
+          required>
+  
+    <button type="submit" class="login">Enter otp</button>    
+  </div>
+  </form>
+  </div>
